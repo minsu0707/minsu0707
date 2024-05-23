@@ -18,6 +18,7 @@
 <div align="left">
   <img src="https://img.shields.io/badge/android-34A853?style=flat-square&logo=android&logoColor=white">&nbsp
   <img src="https://img.shields.io/badge/androidstudio-3DDC84?style=flat-square&logo=androidstudio&logoColor=white">&nbsp
+  <img src="https://img.shields.io/badge/kotlin-7F52FF?style=flat-square&logo=kotlin&logoColor=white">&nbsp
 </div>
 <br>
 <img align="left" src="http://mazassumnida.wtf/api/v2/generate_badge?boj=mandoo0707"/> <img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=min-su08&layout=compact">
