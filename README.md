@@ -17,7 +17,7 @@
 <h3 align="left">✏️ STUDY </h3>
 <div align="left">
   <img src="https://img.shields.io/badge/android-34A853?style=flat-square&logo=android&logoColor=white">&nbsp
-  <img src="https://img.shields.io/badge/androidstudio-3DDC84?style=flat-square&logo=androidstudio&logoColor=white">&nbsp
+  <img src="https://img.shields.io/badge/android studio-3DDC84?style=flat-square&logo=android studio&logoColor=white">&nbsp
   <img src="https://img.shields.io/badge/kotlin-7F52FF?style=flat-square&logo=kotlin&logoColor=white">&nbsp
 </div>
 <br>
