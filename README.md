@@ -21,7 +21,8 @@
   <img src="https://img.shields.io/badge/kotlin-7F52FF?style=flat-square&logo=kotlin&logoColor=white">&nbsp
   <img src="https://img.shields.io/badge/intellij idea-000000?style=flat-square&logo=intellij idea&logoColor=white">&nbsp
 </div>
-<br>
+
+<hr>
 
 <h3 align="left">🏃🏻 Activity</h3>
 <img align="left" src="http://mazassumnida.wtf/api/v2/generate_badge?boj=mandoo0707"/> <img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=min-su08&layout=compact">
