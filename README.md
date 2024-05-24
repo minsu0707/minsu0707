@@ -1,4 +1,4 @@
-
+<img src="https://capsule-render.vercel.app/api?type=waving&color=BDBDC8&height=150&section=header" />
 <h3 align="left">✨ ME ✨</h3>
 <div align="left">
   <a href="https://www.instagram.com/m.in_su08/"><img src="https://img.shields.io/badge/Instagram-ff69b4?style=plastic&logo=Instagram&logoColor=white"/></a>
@@ -26,3 +26,4 @@
 
 <h3 align="left">🏃🏻 Activity</h3>
 <img align="left" src="http://mazassumnida.wtf/api/v2/generate_badge?boj=mandoo0707"/> <img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=min-su08&layout=compact">
+<img src="https://capsule-render.vercel.app/api?type=waving&color=BDBDC8&height=150&section=footer" />
