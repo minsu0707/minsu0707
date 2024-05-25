@@ -1,5 +1,5 @@
 <h3 align="left">✨ ME ✨</h3>
-<p>Hello, I'm Choi Minsoo, and I'm dreaming of becoming an Android developer.</p>
+<p>Hello, I'm Choi Minsu, and I'm dreaming of becoming an Android developer.</p>
 <div align="left">
   <a href="https://www.instagram.com/m.in_su08/"><img src="https://img.shields.io/badge/Instagram-ff69b4?style=plastic&logo=Instagram&logoColor=white"/></a>
  <img src="https://img.shields.io/badge/mandoo4137@gmail.com-EA4305?style=flat-square&logo=Gmail&logoColor=white">
