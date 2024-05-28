@@ -1,5 +1,5 @@
 <h3 align="center">✨ ME ✨</h3>
-<p align="center">Hello, I'm Choi Minsu, and I'm dreaming of becoming an Android developer.</p>
+<p align="center">Hello, I'm Choi Minsu, and I'm dreaming of becoming an Front End developer.</p>
 <div align="center">
   <a href="https://www.instagram.com/m.in_su08/"><img src="https://img.shields.io/badge/Instagram-ff69b4?style=plastic&logo=Instagram&logoColor=white"/></a>
  <img src="https://img.shields.io/badge/mandoo4137@gmail.com-EA4305?style=flat-square&logo=Gmail&logoColor=white">
@@ -10,16 +10,14 @@
 <div align="left">
   <img src="https://img.shields.io/badge/java-007396?style=for-the-badge&logo=OpenJDK&logoColor=white">
   <img src="https://img.shields.io/badge/C-A8B9CC?style=for-the-badge&logo=C&logoColor=white">
-  <img src="https://img.shields.io/badge/html5-E34F26?style=for-the-badge&logo=html5&logoColor=white">
 </div>
 
 
 <h3 align="left">✏️ STUDY </h3>
 <div align="left">
-  <img src="https://img.shields.io/badge/android-34A853?style=flat-square&logo=android&logoColor=white">&nbsp
-  <img src="https://img.shields.io/badge/android studio-3DDC84?style=flat-square&logo=android studio&logoColor=white">&nbsp
-  <img src="https://img.shields.io/badge/kotlin-7F52FF?style=flat-square&logo=kotlin&logoColor=white">&nbsp
-  <img src="https://img.shields.io/badge/intellij idea-000000?style=flat-square&logo=intellij idea&logoColor=white">&nbsp
+  <img src="https://img.shields.io/badge/html5-E34F26?style=for-the-badge&logo=html5&logoColor=white">
+  <img src="https://img.shields.io/badge/css3-1572B6?style=flat-square&logo=css3&logoColor=white">&nbsp
+  <img src="https://img.shields.io/badge/javascript-F7DF1E?style=flat-square&logo=javascript&logoColor=white">&nbsp
 </div>
 
 <hr>
