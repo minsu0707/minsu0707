@@ -19,7 +19,7 @@
   <img src="https://img.shields.io/badge/css3-1572B6?style=flat-square&logo=css3&logoColor=white">&nbsp
   <img src="https://img.shields.io/badge/javascript-F7DF1E?style=flat-square&logo=javascript&logoColor=white">&nbsp
   <img src="https://img.shields.io/badge/react-61DAFB?style=flat-square&logo=react&logoColor=white">&nbsp
-  <img src="https://img.shields.io/badge/visual studio code-5C2D91?style=flat-square&logo=visual studio code&logoColor=white">&nbsp
+  <img src="https://img.shields.io/badge/visual studio code-007ACC?style=flat-square&logo=visual studio code&logoColor=white">&nbsp
 </div>
 
 <hr>
