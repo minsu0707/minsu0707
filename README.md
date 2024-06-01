@@ -3,7 +3,7 @@
 <div align="center">
   <a href="https://www.instagram.com/m.in_su08/"><img src="https://img.shields.io/badge/Instagram-ff69b4?style=plastic&logo=Instagram&logoColor=white"/></a>
  <img src="https://img.shields.io/badge/mandoo4137@gmail.com-EA4305?style=flat-square&logo=Gmail&logoColor=white">
-</div> 
+</div>  
 
 
 <h3 align="left">💪 SKILLS</h3>
