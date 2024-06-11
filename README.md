@@ -1,4 +1,4 @@
-  <h3 align="center">✨ ME ✨</h3>
+<h3 align="center">✨ ME ✨</h3>
 <p align="center">Hello, I'm Choi Minsu, and I'm dreaming of becoming an Front End developer.</p>
 <div align="center">  
   <a href="https://www.instagram.com/m.in_su08/"><img src="https://img.shields.io/badge/Instagram-ff69b4?style=plastic&logo=Instagram&logoColor=white"/></a>
@@ -7,7 +7,7 @@
  
   
 <h3 align="left">💪 SKILLS</h3>  
-<div align="left">
+<div align="left"> 
   <img src="https://img.shields.io/badge/html5-E34F26?style=for-the-badge&logo=html5&logoColor=white">
   <img src="https://img.shields.io/badge/java-007396?style=for-the-badge&logo=OpenJDK&logoColor=white">   
   <img src="https://img.shields.io/badge/C-A8B9CC?style=for-the-badge&logo=C&logoColor=white"> 
