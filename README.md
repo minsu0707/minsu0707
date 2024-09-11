@@ -25,4 +25,4 @@
 <hr>
 
 <h3 align="left">🏃🏻 Activity</h3>
-<img align="left" src="http://mazassumnida.wtf/api/v2/generate_badge?boj=mandoo0707"/> <img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=min-su08&layout=compact">
+<img align="left" src="http://mazassumnida.wtf/api/v2/generate_badge?boj=mandoo0707" src="https://solved.ac/profile/mandoo0707"/><img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=min-su08&layout=compact">
