@@ -9,6 +9,7 @@
    
 <h3 align="left">💪 SKILLS</h3>   
 <div align="left"> 
+  <img src="https://img.shields.io/badge/visual studio code-007ACC?style=flat-square&logo=visual studio code&logoColor=white">&nbsp 
   <img src="https://img.shields.io/badge/html5-E34F26?style=for-the-badge&logo=html5&logoColor=white"> 
   <img src="https://img.shields.io/badge/css3-1572B6?style=flat-square&logo=css3&logoColor=white">&nbsp
   <img src="https://img.shields.io/badge/C-A8B9CC?style=for-the-badge&logo=C&logoColor=white"> 
@@ -19,7 +20,7 @@
 <div align="left">
   <img src="https://img.shields.io/badge/javascript-F7DF1E?style=flat-square&logo=javascript&logoColor=white">&nbsp
   <img src="https://img.shields.io/badge/react-61DAFB?style=flat-square&logo=react&logoColor=white">&nbsp
-  <img src="https://img.shields.io/badge/visual studio code-007ACC?style=flat-square&logo=visual studio code&logoColor=white">&nbsp 
+  <img src="https://img.shields.io/badge/typescript-3178C6?style=flat-square&logo=typescript&logoColor=white">&nbsp
 </div>
 
 <hr>
