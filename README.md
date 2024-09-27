@@ -27,6 +27,6 @@
 
 <h3 align="left">🏃🏻 Activity</h3>
 
-[![wakatime stats](https://github-readme-stats.vercel.app/api/wakatime?username=choiminsu)](https://wakatime.com/@choiminsu)
+[![wakatime stats](https://github-readme-stats.vercel.app/api/wakatime?username=minsu0707)](https://wakatime.com/@minsu0707)
 
 <img align="left" src="http://mazassumnida.wtf/api/v2/generate_badge?boj=mandoo0707"/><img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=min-su08&layout=compact">
