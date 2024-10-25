@@ -1,6 +1,6 @@
  <h3 align="center">✨ ME ✨</h3>
 <p align="center">Hello, I'm Choi Minsu, and I'm dreaming of becoming an Front End developer.</p> 
-<div align="center">  
+<div align="center">   
   <a href="https://www.instagram.com/m.in_su08/"><img src="https://img.shields.io/badge/Instagram-ff69b4?style=plastic&logo=Instagram&logoColor=white"/></a> 
   <a href="https://github.com/min-su08"><img src="https://img.shields.io/badge/github-181717?style=plastic&logo=github&logoColor=white"/></a></a>
   <a href="https://ww.notion.so/Minsu-s-Home-f289ce87f079427385b2d9d5672bc19e"><img src="https://img.shields.io/badge/notion-000000?style=plastic&logo=notion&logoColor=white"/></a> 
