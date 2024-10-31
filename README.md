@@ -6,7 +6,7 @@
   <a href="https://ww.notion.so/Minsu-s-Home-f289ce87f079427385b2d9d5672bc19e"><img src="https://img.shields.io/badge/notion-000000?style=plastic&logo=notion&logoColor=white"/></a> 
   <img src="https://img.shields.io/badge/mandoo4137@gmail.com-EA4305?style=flat-square&logo=Gmail&logoColor=white"> 
 </div>   
- 
+  
    
 <h3 align="left">💪 SKILLS</h3>   
 <div align="left"> 
