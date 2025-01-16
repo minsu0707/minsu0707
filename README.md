@@ -31,4 +31,5 @@
 
 <a href="https://solved.ac/" target="_blank">
     <img align="left" src="http://mazassumnida.wtf/api/v2/generate_badge?boj=mandoo0707" alt="BOJ Badge"/>
-</a><img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=minsu0707&layout=compact">
+</a>
+<a href="https://github.com/minsu0707"><img align="center" style="height:180px" src="https://github-readme-stats.vercel.app/api/top-langs/?username=minsu0707&layout=compact&theme=nord&hide_border=true" /></a> 
