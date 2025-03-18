@@ -1,3 +1,12 @@
+**progress**🔥
+<a href="https://github.com/devxb/gitanimals">
+  <img
+    src="https://render.gitanimals.org/lines/minsu0707?pet-id=625199397123899845"
+    width="600"
+    height="200"
+  />
+</a>
+
 <h3 align="center">✨ ME ✨</h3>
 <p align="center">Hello, I'm Choi Minsu, and I'm dreaming of becoming an Front End developer.</p>
 <div align="center">
