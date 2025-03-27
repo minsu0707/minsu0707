@@ -21,13 +21,6 @@
   />
 </a>
 
-<h3 align="left">✏️ STUDY </h3>
-<div align="left">
-   <img src="https://img.shields.io/badge/JAVASCRIPT-F7DF1E?style=flat&logo=javascript&logoColor=black">&nbsp
-   <img src="https://img.shields.io/badge/TYPESCRIPT-3178C6?style=flat&logo=typescript&logoColor=black">&nbsp
-   <img src="https://img.shields.io/badge/REACT-61DAFB?style=flat&logo=React&logoColor=black">&nbsp
-</div>
-
 <hr>
 
 <h3 align="left">🏃🏻 Activity</h3>
