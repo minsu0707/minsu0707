@@ -1,4 +1,3 @@
-
 <h3 align="center">✨ ME ✨</h3>
 <p align="center">Hello, I'm Choi Minsu, and I'm dreaming of becoming an Front End developer.</p>
 
