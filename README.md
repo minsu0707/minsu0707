@@ -1,5 +1,5 @@
 <h3 align="center">✨ ME ✨</h3>
-<p align="center">Hello, I'm Choi Minsu, and I'm dreaming of becoming an Front End developer.</p>
+<p align="center">Hello, I'm Choi Minsu, and I'm dreaming of becoming an Front End developer.</p> 
 
 <p align="center">
   <img src="https://readme-typing-svg.demolab.com/?lines=an inexhaustible developer😎;always a delightful developer✨;an always sincere developer;&font=Fira%20Code&center=true&width=380&height=50&duration=4000&pause=1000" alt="Example Usage - README Typing SVG"> 
