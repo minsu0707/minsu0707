@@ -9,7 +9,7 @@
   <a href="https://minsu08.tistory.com"><img src="https://img.shields.io/badge/Tistory-orange?style=for-the-badge&logo=Tistory&logoColor=white"></a>
 </div>
   
-<a href="https://github.com/devxb/gitanimals">
+<a href="https://github.com/devxb/gitanimals"> 
   <img
     src="https://render.gitanimals.org/lines/minsu0707?pet-id=625199397123899845"
     width="600"
