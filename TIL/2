@@ -1,0 +1,122 @@
+// utils/dateUtils.js
+function daysBetween(date1, date2) {
+  const diff = new Date(date2) - new Date(date1);
+  return Math.ceil(diff / (1000 * 60 * 60 * 24));
+}
+
+function isSameDay(date1, date2) {
+  const d1 = new Date(date1);
+  const d2 = new Date(date2);
+  return (
+    d1.getFullYear() === d2.getFullYear() &&
+    d1.getMonth() === d2.getMonth() &&
+    d1.getDate() === d2.getDate()
+  );
+}
+
+function formatTime(minutes) {
+  const h = Math.floor(minutes / 60);
+  const m = minutes % 60;
+  return `${h}시간 ${m}분`;
+}
+js
+복사
+편집
+// models/Task.js
+class Task {
+  constructor({
+    id,
+    title,
+    category = 'default',
+    estimatedMinutes = 30,
+    importance = 3, // 1 ~ 5
+    deadline = null,
+    createdAt = new Date(),
+    isRoutine = false,
+    completed = false,
+  }) {
+    this.id = id;
+    this.title = title;
+    this.category = category;
+    this.estimatedMinutes = estimatedMinutes;
+    this.importance = importance;
+    this.deadline = deadline ? new Date(deadline) : null;
+    this.createdAt = new Date(createdAt);
+    this.isRoutine = isRoutine;
+    this.completed = completed;
+  }
+
+  isDueToday() {
+    if (!this.deadline) return false;
+    return isSameDay(new Date(), this.deadline);
+  }
+
+  isOverdue() {
+    if (!this.deadline) return false;
+    return new Date() > this.deadline;
+  }
+
+  urgencyScore() {
+    if (!this.deadline) return 0;
+    const daysLeft = daysBetween(new Date(), this.deadline);
+    return daysLeft <= 0 ? 10 : Math.max(0, 10 - daysLeft);
+  }
+
+  totalScore() {
+    const urgency = this.urgencyScore();
+    return this.importance * 2 + urgency + (this.isRoutine ? 3 : 0);
+  }
+}
+🔹 Part 2: TaskManager 클래스
+js
+복사
+편집
+// managers/TaskManager.js
+class TaskManager {
+  constructor(tasks = []) {
+    this.tasks = tasks.map((t) => new Task(t));
+  }
+
+  addTask(taskData) {
+    const task = new Task(taskData);
+    this.tasks.push(task);
+  }
+
+  getUncompletedTasks() {
+    return this.tasks.filter((t) => !t.completed);
+  }
+
+  getCompletedTasks() {
+    return this.tasks.filter((t) => t.completed);
+  }
+
+  getOverdueTasks() {
+    return this.getUncompletedTasks().filter((t) => t.isOverdue());
+  }
+
+  getTodayTasks() {
+    return this.getUncompletedTasks().filter((t) => t.isDueToday());
+  }
+
+  sortByScore() {
+    return this.getUncompletedTasks().sort((a, b) => b.totalScore() - a.totalScore());
+  }
+
+  groupByCategory() {
+    const map = new Map();
+    this.getUncompletedTasks().forEach((task) => {
+      if (!map.has(task.category)) map.set(task.category, []);
+      map.get(task.category).push(task);
+    });
+    return map;
+  }
+
+  getSummary() {
+    return {
+      total: this.tasks.length,
+      completed: this.getCompletedTasks().length,
+      uncompleted: this.getUncompletedTasks().length,
+      overdue: this.getOverdueTasks().length,
+    };
+  }
+}
