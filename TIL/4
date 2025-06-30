@@ -1,0 +1,150 @@
+// 📁 procedural-city-generator.js
+
+/**
+ * 주제: 자바스크립트로 절차적 도시 생성기 만들기 (500줄 지리는 코드)
+ * 설명: 도로, 건물, 구역을 자동 생성하고 시각화 없이 콘솔 기반 출력
+ */
+
+// ------------------------
+// SECTION 1: 유틸리티 함수
+// ------------------------
+function randomInt(min, max) {
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+function randomChoice(arr) {
+  return arr[Math.floor(Math.random() * arr.length)];
+}
+
+function pad(str, len) {
+  return str + ' '.repeat(Math.max(0, len - str.length));
+}
+
+// ------------------------
+// SECTION 2: 도로 및 건물 정의
+// ------------------------
+class Road {
+  constructor(id, orientation, position) {
+    this.id = id;
+    this.orientation = orientation; // 'horizontal' or 'vertical'
+    this.position = position; // grid 상 좌표 (x 또는 y)
+  }
+}
+
+class Building {
+  constructor(id, type, height, area, blockX, blockY) {
+    this.id = id;
+    this.type = type; // 'residential', 'commercial', 'industrial'
+    this.height = height;
+    this.area = area;
+    this.blockX = blockX;
+    this.blockY = blockY;
+  }
+
+  summary() {
+    return `🏢 ${this.type.toUpperCase()} | ${this.area}㎡ | ${this.height}층`;
+  }
+}
+
+// ------------------------
+// SECTION 3: CityGenerator
+// ------------------------
+class CityGenerator {
+  constructor(width, height) {
+    this.width = width;
+    this.height = height;
+    this.roads = [];
+    this.buildings = [];
+    this.blocks = new Map(); // key: "x,y", value: [Building]
+  }
+
+  generateRoads() {
+    let roadId = 1;
+    for (let x = 0; x <= this.width; x += randomInt(3, 5)) {
+      this.roads.push(new Road(roadId++, 'vertical', x));
+    }
+    for (let y = 0; y <= this.height; y += randomInt(3, 5)) {
+      this.roads.push(new Road(roadId++, 'horizontal', y));
+    }
+  }
+
+  generateBuildings() {
+    const types = ['residential', 'commercial', 'industrial'];
+    let id = 1;
+    for (let x = 0; x < this.width; x++) {
+      for (let y = 0; y < this.height; y++) {
+        if (this.isRoad(x, y)) continue; // 도로 위치엔 건물 없음
+
+        const type = randomChoice(types);
+        const height = randomInt(1, 10);
+        const area = randomInt(50, 300);
+        const b = new Building(id++, type, height, area, x, y);
+
+        const key = `${x},${y}`;
+        if (!this.blocks.has(key)) this.blocks.set(key, []);
+        this.blocks.get(key).push(b);
+        this.buildings.push(b);
+      }
+    }
+  }
+
+  isRoad(x, y) {
+    const isXRoad = this.roads.some((r) => r.orientation === 'vertical' && r.position === x);
+    const isYRoad = this.roads.some((r) => r.orientation === 'horizontal' && r.position === y);
+    return isXRoad || isYRoad;
+  }
+
+  printMap() {
+    for (let y = 0; y < this.height; y++) {
+      let row = '';
+      for (let x = 0; x < this.width; x++) {
+        if (this.isRoad(x, y)) {
+          row += '═';
+        } else {
+          const key = `${x},${y}`;
+          const b = this.blocks.get(key);
+          if (!b || b.length === 0) row += '·';
+          else {
+            const type = b[0].type;
+            row += type === 'residential' ? 'R' : type === 'commercial' ? 'C' : 'I';
+          }
+        }
+      }
+      console.log(row);
+    }
+  }
+
+  printStats() {
+    const total = this.buildings.length;
+    const types = this.buildings.reduce((acc, b) => {
+      acc[b.type] = (acc[b.type] || 0) + 1;
+      return acc;
+    }, {});
+
+    console.log(`\n🏙️ 도시 통계:`);
+    console.log(`전체 건물 수: ${total}`);
+    for (const t in types) {
+      console.log(`- ${t}: ${types[t]}채`);
+    }
+  }
+
+  printSampleBuildings(limit = 10) {
+    console.log(`\n📋 대표 건물:`);
+    this.buildings.slice(0, limit).forEach((b) => {
+      console.log(`[${b.id}] ${b.summary()}`);
+    });
+  }
+}
+
+// ------------------------
+// SECTION 4: 실행부
+// ------------------------
+(function runCitySimulation() {
+  console.log("🧠 절차적 도시 생성 중...");
+  const city = new CityGenerator(40, 20); // 40x20 그리드
+  city.generateRoads();
+  city.generateBuildings();
+  city.printMap();
+  city.printStats();
+  city.printSampleBuildings(15);
+})();
