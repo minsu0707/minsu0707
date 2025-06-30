@@ -1,78 +1,66 @@
-import { DateTime } from 'luxon';
+const userBudget = {
+  food: 200000,
+  transport: 100000,
+  hobby: 150000,
+  shopping: 100000,
+  etc: 50000,
+};
 
-// Mock 도시 목록
-const cities = [
-  { name: 'Seoul', timezone: 'Asia/Seoul' },
-  { name: 'New York', timezone: 'America/New_York' },
-  { name: 'Paris', timezone: 'Europe/Paris' },
-  { name: 'London', timezone: 'Europe/London' },
-  { name: 'Tokyo', timezone: 'Asia/Tokyo' },
-  { name: 'Sydney', timezone: 'Australia/Sydney' },
-  { name: 'Dubai', timezone: 'Asia/Dubai' },
-  { name: 'Cairo', timezone: 'Africa/Cairo' },
+const userSpending = [
+  { category: 'food', amount: 12000, date: '2025-06-01' },
+  { category: 'food', amount: 50000, date: '2025-06-10' },
+  { category: 'transport', amount: 40000, date: '2025-06-05' },
+  { category: 'hobby', amount: 80000, date: '2025-06-07' },
+  { category: 'hobby', amount: 100000, date: '2025-06-12' },
+  { category: 'shopping', amount: 60000, date: '2025-06-15' },
+  { category: 'etc', amount: 55000, date: '2025-06-17' },
+  { category: 'food', amount: 90000, date: '2025-06-28' },
 ];
 
-// 모킹된 날씨 API (7일치)
-const getWeatherData = async (cityName) => {
-  return new Promise((resolve) => {
-    const data = Array.from({ length: 7 }).map(() => ({
-      temp: Math.floor(Math.random() * 25 + 5), // 5도~30도 랜덤
-    }));
-    setTimeout(() => resolve(data), 100); // mock latency
+// 현재 달
+const currentMonth = new Date().getMonth(); // 0~11
+
+// 카테고리별 합산
+const monthlySpending = userSpending.reduce((acc, { category, amount, date }) => {
+  const d = new Date(date);
+  if (d.getMonth() !== currentMonth) return acc; // 이번 달 아니면 무시
+
+  if (!acc[category]) acc[category] = 0;
+  acc[category] += amount;
+  return acc;
+}, {});
+
+// 절약 메시지
+const savingTips = {
+  food: '식비는 배달보단 직접 요리하거나 도시락을 추천합니다!',
+  transport: '대중교통 정기권을 활용해보세요!',
+  hobby: '취미 소비는 무료 체험부터 시작해보는 건 어때요?',
+  shopping: '불필요한 소비는 장바구니에 담고 하루 뒤에 결제하세요!',
+  etc: '기타 지출은 정리되지 않으면 누수가 커집니다. 한 번 더 점검해보세요.',
+};
+
+// 결과 분석
+const analyzeSpending = (spending, budget) => {
+  console.log(`📊 [이번 달 소비 분석 결과]\n`);
+
+  Object.keys(budget).forEach((category) => {
+    const spent = spending[category] || 0;
+    const limit = budget[category];
+    const percent = Math.round((spent / limit) * 100);
+
+    let message = `- ${category.toUpperCase()}: ${spent.toLocaleString()}원 / ${limit.toLocaleString()}원 (${percent}%)`;
+
+    if (spent > limit) {
+      message += ` ⚠️ 예산 초과! → ${savingTips[category]}`;
+    } else if (percent >= 80) {
+      message += ` 🟡 예산 근접. 관리가 필요해요.`;
+    } else {
+      message += ` ✅ 안정적인 지출입니다.`;
+    }
+
+    console.log(message);
   });
 };
 
-// 여행 추천 텍스트
-const getTravelSuggestion = (city, tempDiff) => {
-  if (tempDiff > 10) return `${city}는 날씨 변화가 극심해서 다양한 계절 옷이 필요해요. 모험가에게 추천!`;
-  if (tempDiff > 5) return `${city}는 선선하면서도 간간히 더워서 산책과 관광 둘 다 즐기기 좋아요.`;
-  return `${city}는 날씨가 안정적이라 휴양에 적합합니다.`;
-};
-
-// 메인 로직
-const findTopTravelCities = async () => {
-  try {
-    const currentDate = DateTime.now();
-
-    // 1. 밤인 도시 필터링
-    const nightCities = cities.filter((city) => {
-      const localTime = currentDate.setZone(city.timezone);
-      const hour = localTime.hour;
-      return hour >= 20 || hour <= 6;
-    });
-
-    console.log('밤인 도시:', nightCities.map((c) => c.name));
-
-    // 2. 날씨 변화량 계산
-    const weatherChanges = await Promise.all(
-      nightCities.map(async (city) => {
-        const weather = await getWeatherData(city.name); // 7일치 날씨
-        const temps = weather.map((w) => w.temp);
-        const max = Math.max(...temps);
-        const min = Math.min(...temps);
-        return {
-          city: city.name,
-          tempDiff: max - min,
-        };
-      })
-    );
-
-    // 3. 변화량 기준으로 정렬 및 상위 5개 추출
-    const topCities = weatherChanges
-      .sort((a, b) => b.tempDiff - a.tempDiff)
-      .slice(0, 5);
-
-    // 4. 결과 출력
-    console.log('\n📍 추천 여행지 TOP 5');
-    topCities.forEach(({ city, tempDiff }, index) => {
-      const reason = getTravelSuggestion(city, tempDiff);
-      console.log(`${index + 1}. ${city} - 변화량: ${tempDiff}도 🌡️ → ${reason}`);
-    });
-
-  } catch (err) {
-    console.error('에러 발생:', err);
-  }
-};
-
 // 실행
-findTopTravelCities();
+analyzeSpending(monthlySpending, userBudget);
