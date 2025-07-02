@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Fake News Detector</title>
+  <style>
+    body {
+      background-color: #1c1c1c;
+      color: white;
+      font-family: sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    h1 {
+      margin-bottom: 20px;
+    }
+
+    #headline {
+      background-color: #333;
+      padding: 20px;
+      border-radius: 10px;
+      font-size: 22px;
+      text-align: center;
+      max-width: 600px;
+    }
+
+    .buttons {
+      margin-top: 30px;
+      display: flex;
+      gap: 20px;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 18px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    .real {
+      background-color: #00c853;
+    }
+
+    .fake {
+      background-color: #d50000;
+    }
+
+    #score {
+      margin-top: 40px;
+      font-size: 18px;
+    }
+
+    #timer {
+      margin-top: 10px;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+  <h1>📰 Fake News Detector</h1>
+  <div id="headline">로딩 중...</div>
+  <div class="buttons">
+    <button class="real">진짜 뉴스</button>
+    <button class="fake">가짜 뉴스</button>
+  </div>
+  <div id="score">점수: 0</div>
+  <div id="timer">남은 시간: 10초</div>
+
+  <script>
+    const headlines = [
+      { text: "세계 최초의 우주 햄버거 배달 성공", isReal: false },
+      { text: "구글, 인공지능으로 냄새 인식 기술 개발", isReal: true },
+      { text: "서울시, 모든 고양이에게 주민등록증 발급 추진", isReal: false },
+      { text: "프랑스, 빵 배달용 드론 정식 허용", isReal: true },
+      { text: "AI가 만든 소설, 문학상 수상", isReal: true },
+      { text: "2030년까지 지구 자전 속도 2배로 증가 예측", isReal: false }
+    ];
+
+    const headlineEl = document.getElementById("headline");
+    const buttons = document.querySelectorAll("button");
+    const scoreEl = document.getElementById("score");
+    const timerEl = document.getElementById("timer");
+
+    let currentIndex = 0;
+    let score = 0;
+    let timeLeft = 10;
+    let countdown;
+
+    function showNextHeadline() {
+      if (currentIndex >= headlines.length) {
+        headlineEl.textContent = "게임 종료!";
+        scoreEl.textContent = `최종 점수: ${score} / ${headlines.length}`;
+        buttons.forEach(btn => btn.disabled = true);
+        timerEl.textContent = "";
+        return;
+      }
+
+      timeLeft = 10;
+      timerEl.textContent = `남은 시간: ${timeLeft}초`;
+      headlineEl.textContent = headlines[currentIndex].text;
+      countdown = setInterval(updateTimer, 1000);
+    }
+
+    function updateTimer() {
+      timeLeft--;
+      timerEl.textContent = `남은 시간: ${timeLeft}초`;
+      if (timeLeft <= 0) {
+        clearInterval(countdown);
+        currentIndex++;
+        showNextHeadline();
+      }
+    }
+
+    buttons.forEach(button => {
+      button.addEventListener("click", () => {
+        clearInterval(countdown);
+        const choice = button.classList.contains("real");
+        if (choice === headlines[currentIndex].isReal) {
+          score++;
+        }
+        scoreEl.textContent = `점수: ${score}`;
+        currentIndex++;
+        showNextHeadline();
+      });
+    });
+
+    showNextHeadline();
+  </script>
+</body>
+</html>
