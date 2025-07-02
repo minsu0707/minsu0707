@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>FocusTap - 집중력 테스트</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Pretendard', sans-serif;
+      background-color: #0e0e0e;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    h1 {
+      margin-bottom: 20px;
+    }
+
+    #box {
+      width: 300px;
+      height: 300px;
+      background-color: #444;
+      border-radius: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+      user-select: none;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    #box.active {
+      background-color: #00ff66;
+      color: black;
+    }
+
+    #result {
+      margin-top: 30px;
+      font-size: 20px;
+    }
+
+    #restart {
+      margin-top: 15px;
+      padding: 10px 20px;
+      background: #222;
+      color: white;
+      border: 1px solid white;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    #restart:hover {
+      background-color: #333;
+    }
+  </style>
+</head>
+<body>
+  <h1>🧠 FocusTap - 집중력 테스트</h1>
+  <div id="box">클릭해서 시작!</div>
+  <div id="result"></div>
+  <button id="restart" style="display: none;">다시 하기</button>
+
+  <script>
+    const box = document.getElementById("box");
+    const result = document.getElementById("result");
+    const restartBtn = document.getElementById("restart");
+
+    let startTime = 0;
+    let timeoutId = null;
+    let isActive = false;
+
+    function startGame() {
+      box.textContent = "준비하세요...";
+      result.textContent = "";
+      restartBtn.style.display = "none";
+      box.classList.remove("active");
+      isActive = false;
+
+      const randomDelay = Math.floor(Math.random() * 4000) + 2000; // 2~6초
+
+      timeoutId = setTimeout(() => {
+        box.classList.add("active");
+        box.textContent = "지금 클릭!";
+        startTime = new Date().getTime();
+        isActive = true;
+      }, randomDelay);
+    }
+
+    box.addEventListener("click", () => {
+      if (timeoutId === null) return;
+
+      if (!isActive) {
+        clearTimeout(timeoutId);
+        box.textContent = "너무 빨라요!";
+        result.textContent = "실패 😢";
+        restartBtn.style.display = "inline-block";
+      } else {
+        const reactionTime = new Date().getTime() - startTime;
+        box.textContent = `${reactionTime} ms`;
+        result.textContent = "👏 성공!";
+        restartBtn.style.display = "inline-block";
+        box.classList.remove("active");
+        isActive = false;
+      }
+    });
+
+    restartBtn.addEventListener("click", () => {
+      timeoutId = null;
+      startGame();
+    });
+
+    // 첫 실행
+    startGame();
+  </script>
+</body>
+</html>
