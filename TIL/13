@@ -1,0 +1,124 @@
+✅ 1단계: HTML/CSS/JS 기초 (웹 개발의 뼈대)
+HTML
+시맨틱 태그 (<header>, <main>, <section> 등)
+
+폼 (<input>, <form>, <label>, 유효성 검사)
+
+CSS
+선택자, 박스모델, Flexbox, Grid
+
+반응형 디자인 (Media Queries)
+
+CSS 변수, 애니메이션
+
+CSS-in-JS, TailwindCSS (실무 대비용)
+
+JavaScript
+변수, 조건문, 반복문, 함수
+
+배열/객체, 고차 함수 (map, filter, reduce)
+
+DOM 조작
+
+이벤트 핸들링
+
+비동기 처리 (Promise, async/await)
+
+✅ 2단계: 프레임워크 & 필수 도구
+React (가장 많이 쓰는 프레임워크)
+컴포넌트, Props, State
+
+Hooks (useState, useEffect, useRef 등)
+
+Router (React Router)
+
+Context API
+
+TypeScript
+타입 시스템, 인터페이스, 제네릭
+
+React + TypeScript로 실습
+
+상태 관리
+기본: Context API
+
+고급: Zustand, Redux Toolkit, Recoil 등
+
+API 연동
+REST API, Fetch, Axios
+
+비동기 처리, 에러 핸들링
+
+React Query (캐싱과 서버 상태 관리)
+
+✅ 3단계: 고급 프론트엔드 개발
+UI/UX 설계
+컴포넌트 설계 패턴 (Atomic Design)
+
+디자인 시스템 (예: Figma → 구현)
+
+접근성 (a11y), 반응형 디자인
+
+성능 최적화
+Lazy Loading, Code Splitting
+
+Lighthouse 분석
+
+Virtualization (예: react-window)
+
+테스트
+Jest, React Testing Library
+
+E2E: Cypress
+
+애니메이션
+CSS Keyframe, Framer Motion
+
+✅ 4단계: 협업 & 실무 환경
+Git & GitHub
+Branch 전략 (Git Flow)
+
+PR 리뷰, Conflict 해결
+
+패키징 및 빌드 도구
+Vite (또는 Webpack), Babel
+
+ESLint, Prettier
+
+배포
+Vercel, Netlify, GitHub Pages
+
+CI/CD 개념
+
+✅ 5단계: 포트폴리오 및 프로젝트
+개인 프로젝트 예시
+투두리스트, 블로그, 날씨 앱, 영화 검색 앱
+
+Firebase를 활용한 로그인 시스템
+
+팀 프로젝트 경험
+협업 툴: Notion, Figma, GitHub Project
+
+README 작성, issue 관리
+
+📌 추천 학습 순서 요약
+HTML/CSS/JS →
+
+React →
+
+TypeScript →
+
+API 연동 & 상태관리 →
+
+배포 및 협업 →
+
+포트폴리오/프로젝트
+
+💡 추가 추천 학습
+Next.js (SSR, SEO 최적화)
+
+GraphQL
+
+Storybook
+
+디자인 시스템 구축 (예: Chakra UI, shadcn/ui)
