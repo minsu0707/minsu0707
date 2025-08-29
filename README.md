@@ -9,7 +9,7 @@
 </div> 
   
 <a href="https://github.com/devxb/gitanimals"> 
-  <img
+  <img 
     src="https://render.gitanimals.org/lines/minsu0707?pet-id=625199397123899845"
     width="600" 
     height="200"
