@@ -5,7 +5,6 @@
   <a href="https://www.instagram.com/m.in_su08/"><img src="https://img.shields.io/badge/Instagram-ff69b4?style=plastic&logo=Instagram&logoColor=white"/></a>
   <a href="https://github.com/min-su08"><img src="https://img.shields.io/badge/github-181717?style=plastic&logo=github&logoColor=white"/></a>
   <img src="https://img.shields.io/badge/mandoo4137@gmail.com-EA4305?style=flat-square&logo=Gmail&logoColor=white">
-  <a href="https://minsu08.tistory.com"><img src="https://img.shields.io/badge/Tistory-orange?style=for-the-badge&logo=Tistory&logoColor=white"></a>
 </div> 
   
 <a href="https://github.com/devxb/gitanimals"> 
