@@ -10,7 +10,7 @@
 <a href="https://www.gitanimals.org/en_US?utm_medium=image&utm_source=minsu0707&utm_content=farm">
 <img
   src="https://render.gitanimals.org/farms/minsu0707"
-  width="600"
+  width="900"
   height="300"
 />
 </a>
