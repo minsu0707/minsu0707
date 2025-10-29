@@ -7,12 +7,12 @@
   <img src="https://img.shields.io/badge/mandoo4137@gmail.com-EA4305?style=flat-square&logo=Gmail&logoColor=white">
 </div> 
   
-<a href="https://github.com/devxb/gitanimals"> 
-  <img 
-    src="https://render.gitanimals.org/lines/minsu0707?pet-id=625199397123899845"
-    width="600" 
-    height="200"
-  />
+<a href="https://www.gitanimals.org/en_US?utm_medium=image&utm_source=minsu0707&utm_content=farm">
+<img
+  src="https://render.gitanimals.org/farms/minsu0707"
+  width="600"
+  height="300"
+/>
 </a>
 
 <hr>
