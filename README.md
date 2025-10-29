@@ -6,7 +6,7 @@
   <a href="https://github.com/min-su08"><img src="https://img.shields.io/badge/github-181717?style=plastic&logo=github&logoColor=white"/></a>
   <img src="https://img.shields.io/badge/mandoo4137@gmail.com-EA4305?style=flat-square&logo=Gmail&logoColor=white">
 </div> 
-  
+<br/>
 <a href="https://www.gitanimals.org/en_US?utm_medium=image&utm_source=minsu0707&utm_content=farm">
 <img
   src="https://render.gitanimals.org/farms/minsu0707"
