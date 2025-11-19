@@ -19,6 +19,8 @@
 
 <h3 align="left">🏃🏻 Activity</h3>
 
+![GitHub Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=minsu0707&theme=react-dark&color=00ff00&line=00ff00&point=00ff00)
+
 <a href="https://solved.ac/" target="_blank">
     <img align="left" src="http://mazassumnida.wtf/api/v2/generate_badge?boj=mandoo0707" alt="BOJ Badge"/>
 </a>
