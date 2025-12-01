@@ -25,4 +25,4 @@
     <img align="left" src="http://mazassumnida.wtf/api/v2/generate_badge?boj=mandoo0707" alt="BOJ Badge"/>
 </a>
 
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=minsu0707&layout=compact&hide=html,css)
+![Top Langs](https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api/top-langs/?username=minsu0707&layout=compact&hide=html,css)
