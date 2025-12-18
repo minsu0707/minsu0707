@@ -4,18 +4,6 @@
   Hello, I'm Choi Minsu, and I'm dreaming of becoming an Front End developer.
 </p>
 
-<div align="center">
-  <a href="https://www.instagram.com/m.in_su08/">
-    <img src="https://img.shields.io/badge/Instagram-ff69b4?style=plastic&logo=Instagram&logoColor=white"/>
-  </a>
-  <a href="https://github.com/minsu0707">
-    <img src="https://img.shields.io/badge/github-181717?style=plastic&logo=github&logoColor=white"/>
-  </a>
-  <img src="https://img.shields.io/badge/mandoo4137@gmail.com-EA4305?style=flat-square&logo=Gmail&logoColor=white">
-</div>
-
-<br/>
-
 <!-- WakaTime Simple Total Time -->
 <div align="center">
   <a href="https://wakatime.com/@46bc675f-cf31-470c-af33-a66c597c9c77">
