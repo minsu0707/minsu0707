@@ -9,7 +9,7 @@
   <a href="https://wakatime.com/@46bc675f-cf31-470c-af33-a66c597c9c77">
     <img src="https://wakatime.com/badge/user/46bc675f-cf31-470c-af33-a66c597c9c77.svg" alt="Total time coded since Sep 26 2024" />
   </a>
-</div>
+</div> 
 
 <br/>
 
