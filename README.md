@@ -25,7 +25,14 @@
 
 <!-- 기존 커밋 그래프 테마 유지 -->
 ![GitHub Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=minsu0707&theme=react-dark&color=00ff00&line=00ff00&point=00ff00)
-[![My Skills](https://skillicons.dev/icons?i=js,ts,react,nextjs,vite,git,notion)](https://skillicons.dev)
+
+// my skills
+<div align="center">
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=js,ts,react,nextjs,vite,git,notion" alt="My Skills" />
+  </a>
+</div>
+
 <br/>
 
 <div align="left">
