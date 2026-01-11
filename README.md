@@ -2,7 +2,7 @@
 
 <p align="center">
   Hello, I'm Choi Minsu, and I'm dreaming of becoming an Front End developer.
-</p>
+</p> 
 
 <!-- WakaTime Simple Total Time -->
 <div align="center">
