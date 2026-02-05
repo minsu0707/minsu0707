@@ -24,7 +24,7 @@
 
 <div align="center">
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=html,css,js,ts,react,nextjs,styledcomponents,tailwindcss,vite,git,notion" alt="My Skills" />
+    <img src="https://skillicons.dev/icons?i=html,css,js,ts,react,nextjs,styledcomponents,tailwindcss,vite,git,notion,postman" alt="My Skills" />
   </a>
 </div>
 
